@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:workmanagerexample/core/components/custom_text_field.dart';
+import 'package:workmanagerexample/core/extensions/int_extension.dart';
 import 'package:workmanagerexample/features/profile/domain/entities/user_profile.dart';
 import 'package:workmanagerexample/features/profile/presentation/providers/user_profile_provider.dart';
 
@@ -12,7 +13,7 @@ class AgeTextField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CustomTextField(
-      initialValue: profile.age.toString(),
+      initialValue: profile.age.toStringFormat,
       labelText: "Age",
       keyboardType: TextInputType.number,
       onChanged: (value) {

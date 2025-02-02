@@ -14,11 +14,7 @@ class MainLayout extends StatefulWidget {
 class _MainLayoutState extends State<MainLayout> {
   int _currentIndex = 0;
 
-  final List<Widget> _pages = [
-    const HomePage(),
-    HistoryPage(),
-    ProfilePage(),
-  ];
+  final List<Widget> _pages = [const HomePage(), HistoryPage(), ProfilePage()];
 
   void _onTabTapped(int index) {
     setState(() {
@@ -33,7 +29,7 @@ class _MainLayoutState extends State<MainLayout> {
       body: _pages[_currentIndex],
       bottomNavigationBar: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.only(left: 16.0, right: 16.0),
+          padding: const EdgeInsets.only(left: 16.0, right: 16.0, bottom: 16.0),
           child: ClipRRect(
             borderRadius: BorderRadius.circular(24.0),
             child: CustomBottomNavigationBar(

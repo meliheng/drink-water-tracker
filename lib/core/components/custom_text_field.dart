@@ -18,7 +18,8 @@ class CustomTextField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
-      initialValue: initialValue ?? "",
+      initialValue:
+          (initialValue == null || initialValue!.isEmpty) ? "" : initialValue,
       decoration: InputDecoration(
         labelText: labelText,
         border: OutlineInputBorder(),
