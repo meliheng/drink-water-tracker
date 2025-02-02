@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:sqflite/sqflite.dart';
 import 'package:workmanagerexample/core/components/main_layout.dart';
+import 'package:workmanagerexample/core/services/notification_service.dart';
 import 'package:workmanagerexample/features/water/data/repositories/water_consumption_sqlite_repository_impl.dart';
 import 'package:workmanagerexample/features/water/presentation/providers/water_consumption_provider.dart';
 import 'package:workmanagerexample/features/water/presentation/providers/water_history_provider.dart';
@@ -16,6 +17,10 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   final prefs = await SharedPreferences.getInstance();
   final dbHelper = await DatabaseHelper.instance.database;
+
+  // Initialize notification service
+  await NotificationService().initialize();
+  await NotificationService().showWaterReminder();
 
   runApp(MyApp(prefs: prefs, dbHelper: dbHelper));
 }
