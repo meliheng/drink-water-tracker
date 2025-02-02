@@ -5,7 +5,7 @@ extension DateTimeExtension on DateTime {
   }
 
   String get formattedDate {
-    return '$day/${month.toString().padLeft(2, '0')}/$year';
+    return '${day.toString().padLeft(2, '0')}/${month.toString().padLeft(2, '0')}/$year';
   }
 
   String get formattedTime {
@@ -27,7 +27,7 @@ extension DateTimeExtension on DateTime {
   }
 
   DateTime get startOfDay => DateTime(year, month, day);
-  
+
   DateTime get endOfDay => DateTime(year, month, day, 23, 59, 59);
 
   bool isBetween(DateTime start, DateTime end) {
