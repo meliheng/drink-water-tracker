@@ -28,12 +28,12 @@ class CustomBottomNavigationBar extends StatelessWidget {
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.history),
-            activeIcon: Icon(Icons.store),
+            activeIcon: Icon(Icons.history),
             label: 'History',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.person),
-            activeIcon: Icon(Icons.favorite),
+            activeIcon: Icon(Icons.person),
             label: 'Profile',
           ),
         ],

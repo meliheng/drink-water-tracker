@@ -23,17 +23,15 @@ class ProfileSaveButton extends StatelessWidget {
           await profileProvider.updateProfile();
 
           // Reload water consumption data to reflect the new target
-          if (context.mounted) {
-            final waterProvider = Provider.of<WaterConsumptionProvider>(
-              context,
-              listen: false,
-            );
-            await waterProvider.loadConsumption();
+          final waterProvider = Provider.of<WaterConsumptionProvider>(
+            context,
+            listen: false,
+          );
+          await waterProvider.loadConsumption();
 
-            ScaffoldMessenger.of(context).showSnackBar(
-              const SnackBar(content: Text('Profile saved successfully')),
-            );
-          }
+          ScaffoldMessenger.of(context).showSnackBar(
+            const SnackBar(content: Text('Profile saved successfully')),
+          );
         }
       },
     );

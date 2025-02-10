@@ -52,7 +52,6 @@ class MyApp extends StatelessWidget {
                 WaterConsumptionSqliteRepositoryImpl(dbHelper);
             final provider = WaterHistoryProvider(repository);
             provider.loadHistory();
-            // provider.loadConsumption();
             return provider;
           },
         ),
