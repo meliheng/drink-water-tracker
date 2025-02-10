@@ -1,4 +1,4 @@
-# Work Manager Example
+# Water Reminder App
 
 A Flutter project demonstrating the implementation of local notifications, state management, data persistence, and SQLite database integration.
 
