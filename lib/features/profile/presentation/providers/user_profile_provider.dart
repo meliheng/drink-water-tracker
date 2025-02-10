@@ -1,5 +1,6 @@
 import 'package:flutter/foundation.dart';
-import 'package:workmanagerexample/features/water/domain/repositories/water_consumption_repository.dart';
+import 'package:water_reminder/features/water/domain/repositories/water_consumption_repository.dart';
+
 import '../../domain/entities/user_profile.dart';
 import '../../domain/repositories/user_profile_repository.dart';
 

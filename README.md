@@ -25,12 +25,12 @@ This project uses the following packages:
 
 2. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/workmanagerexample.git
+   git clone https://github.com/yourusername/waterreminder.git
    ```
 
 3. Navigate to the project directory:
    ```bash
-   cd workmanagerexample
+   cd waterreminder
    ```
 
 4. Install dependencies:

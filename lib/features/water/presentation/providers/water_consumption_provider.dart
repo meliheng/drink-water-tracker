@@ -1,6 +1,6 @@
 import 'package:flutter/foundation.dart';
-import 'package:workmanagerexample/features/water/domain/entities/water_consumption.dart';
-import 'package:workmanagerexample/features/water/domain/repositories/water_consumption_repository.dart';
+import 'package:water_reminder/features/water/domain/entities/water_consumption.dart';
+import 'package:water_reminder/features/water/domain/repositories/water_consumption_repository.dart';
 
 class WaterConsumptionProvider extends ChangeNotifier {
   final WaterConsumptionRepository _repository;

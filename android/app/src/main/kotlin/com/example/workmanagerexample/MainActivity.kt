@@ -1,4 +1,4 @@
-package com.example.workmanagerexample
+package com.example.waterreminder
 
 import io.flutter.embedding.android.FlutterActivity
 

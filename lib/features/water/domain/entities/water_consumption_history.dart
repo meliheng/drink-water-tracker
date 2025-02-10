@@ -1,4 +1,4 @@
-import 'package:workmanagerexample/core/extensions/datetime_extension.dart';
+import 'package:water_reminder/core/extensions/datetime_extension.dart';
 
 class WaterConsumptionHistory {
   final double consumed;

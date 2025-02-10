@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:workmanagerexample/features/water/domain/entities/water_cup.dart';
+import 'package:water_reminder/features/water/domain/entities/water_cup.dart';
 
 class CupSelectionGrid extends StatelessWidget {
   final List<WaterCup> cups;

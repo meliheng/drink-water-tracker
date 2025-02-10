@@ -1,4 +1,4 @@
-import 'package:workmanagerexample/features/water/domain/entities/water_consumption_history.dart';
+import 'package:water_reminder/features/water/domain/entities/water_consumption_history.dart';
 
 import '../entities/water_consumption.dart';
 

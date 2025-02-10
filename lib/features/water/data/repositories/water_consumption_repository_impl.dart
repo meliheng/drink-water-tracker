@@ -1,5 +1,6 @@
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:workmanagerexample/features/water/domain/entities/water_consumption_history.dart';
+import 'package:water_reminder/features/water/domain/entities/water_consumption_history.dart';
+
 import '../../domain/entities/water_consumption.dart';
 import '../../domain/repositories/water_consumption_repository.dart';
 

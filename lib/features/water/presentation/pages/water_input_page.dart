@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:workmanagerexample/core/components/custom_app_bar.dart';
-import 'package:workmanagerexample/core/components/gradient_background_layout.dart';
-import 'package:workmanagerexample/core/constants/water_constants.dart';
+import 'package:water_reminder/core/components/custom_app_bar.dart';
+import 'package:water_reminder/core/components/gradient_background_layout.dart';
+import 'package:water_reminder/core/constants/water_constants.dart';
+
 import '../providers/water_consumption_provider.dart';
 import '../providers/water_input_provider.dart';
 import 'components/cup_selection_grid.dart';

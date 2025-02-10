@@ -1,13 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:workmanagerexample/features/profile/domain/entities/user_profile.dart';
-import 'package:workmanagerexample/features/profile/presentation/providers/user_profile_provider.dart';
+import 'package:water_reminder/features/profile/domain/entities/user_profile.dart';
+import 'package:water_reminder/features/profile/presentation/providers/user_profile_provider.dart';
 
 class GenderDropdown extends StatelessWidget {
-  const GenderDropdown({
-    super.key,
-    required this.profile,
-  });
+  const GenderDropdown({super.key, required this.profile});
 
   final UserProfile profile;
 
@@ -20,14 +17,8 @@ class GenderDropdown extends StatelessWidget {
         border: OutlineInputBorder(),
       ),
       items: const [
-        DropdownMenuItem(
-          value: 'male',
-          child: Text('Male'),
-        ),
-        DropdownMenuItem(
-          value: 'female',
-          child: Text('Female'),
-        ),
+        DropdownMenuItem(value: 'male', child: Text('Male')),
+        DropdownMenuItem(value: 'female', child: Text('Female')),
       ],
       onChanged: (value) {
         Provider.of<UserProfileProvider>(

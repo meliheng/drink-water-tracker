@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:workmanagerexample/core/components/bottom_navigation_bar.dart';
-import 'package:workmanagerexample/features/profile/presentation/pages/profile_page.dart';
-import 'package:workmanagerexample/features/water/presentation/pages/history_page.dart';
-import 'package:workmanagerexample/features/water/presentation/pages/home_page.dart';
+import 'package:water_reminder/core/components/bottom_navigation_bar.dart';
+import 'package:water_reminder/features/profile/presentation/pages/profile_page.dart';
+import 'package:water_reminder/features/water/presentation/pages/history_page.dart';
+import 'package:water_reminder/features/water/presentation/pages/home_page.dart';
 
 class MainLayout extends StatefulWidget {
   const MainLayout({super.key});

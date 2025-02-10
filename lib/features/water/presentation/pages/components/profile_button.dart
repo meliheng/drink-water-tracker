@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:workmanagerexample/features/water/presentation/pages/water_input_page.dart';
+import 'package:water_reminder/features/water/presentation/pages/water_input_page.dart';
 
 class ProfileButton extends StatelessWidget {
   const ProfileButton({super.key});

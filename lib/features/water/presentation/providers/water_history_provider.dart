@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:workmanagerexample/features/water/domain/extensions/water_history_extension.dart';
-import 'package:workmanagerexample/features/water/domain/repositories/water_consumption_repository.dart';
+import 'package:water_reminder/features/water/domain/extensions/water_history_extension.dart';
+import 'package:water_reminder/features/water/domain/repositories/water_consumption_repository.dart';
+
 import '../../domain/entities/water_consumption_history.dart';
 
 class WaterHistoryProvider extends ChangeNotifier {

@@ -1,5 +1,5 @@
 import 'package:flutter/foundation.dart';
-import 'package:workmanagerexample/features/water/domain/entities/water_cup.dart';
+import 'package:water_reminder/features/water/domain/entities/water_cup.dart';
 
 class WaterInputProvider extends ChangeNotifier {
   double _selectedAmount = 0.0;

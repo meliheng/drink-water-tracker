@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:workmanagerexample/core/components/custom_app_bar.dart';
-import 'package:workmanagerexample/core/components/gradient_background_layout.dart';
-import 'package:workmanagerexample/features/profile/presentation/pages/components/age_text_field.dart';
-import 'package:workmanagerexample/features/profile/presentation/pages/components/gender_dropdown.dart';
-import 'package:workmanagerexample/features/profile/presentation/pages/components/intake_water_card.dart';
-import 'package:workmanagerexample/features/profile/presentation/pages/components/profile_save_button.dart';
-import 'package:workmanagerexample/features/profile/presentation/pages/components/weight_text_field.dart';
+import 'package:water_reminder/core/components/custom_app_bar.dart';
+import 'package:water_reminder/core/components/gradient_background_layout.dart';
+import 'package:water_reminder/features/profile/presentation/pages/components/age_text_field.dart';
+import 'package:water_reminder/features/profile/presentation/pages/components/gender_dropdown.dart';
+import 'package:water_reminder/features/profile/presentation/pages/components/intake_water_card.dart';
+import 'package:water_reminder/features/profile/presentation/pages/components/profile_save_button.dart';
+import 'package:water_reminder/features/profile/presentation/pages/components/weight_text_field.dart';
+
 import '../providers/user_profile_provider.dart';
 
 class ProfilePage extends StatefulWidget {

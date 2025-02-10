@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:workmanagerexample/core/components/custom_app_bar.dart';
-import 'package:workmanagerexample/core/components/gradient_background_layout.dart';
-import 'package:workmanagerexample/features/water/presentation/pages/components/history_list_item.dart';
+import 'package:water_reminder/core/components/custom_app_bar.dart';
+import 'package:water_reminder/core/components/gradient_background_layout.dart';
+import 'package:water_reminder/features/water/presentation/pages/components/history_list_item.dart';
+
 import '../providers/water_history_provider.dart';
 
 class HistoryPage extends StatelessWidget {
