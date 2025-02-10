@@ -25,20 +25,15 @@ This project uses the following packages:
 
 2. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/waterreminder.git
+   git clone https://github.com/meliheng/drink-water-tracker.git
    ```
 
-3. Navigate to the project directory:
-   ```bash
-   cd waterreminder
-   ```
-
-4. Install dependencies:
+3. Install dependencies:
    ```bash
    flutter pub get
    ```
 
-5. Run the app:
+4. Run the app:
    ```bash
    flutter run
    ```
@@ -47,7 +42,3 @@ This project uses the following packages:
 
 - Flutter SDK: ^3.8.0-1.0.dev
 - Dart: Compatible with Flutter SDK version
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
