@@ -7,11 +7,12 @@ import 'package:workmanagerexample/core/services/notification_service.dart';
 import 'package:workmanagerexample/features/water/data/repositories/water_consumption_sqlite_repository_impl.dart';
 import 'package:workmanagerexample/features/water/presentation/providers/water_consumption_provider.dart';
 import 'package:workmanagerexample/features/water/presentation/providers/water_history_provider.dart';
-import 'features/water/domain/repositories/water_consumption_repository.dart';
+
+import 'core/database/database_helper.dart';
 import 'features/profile/data/repositories/user_profile_repository_impl.dart';
 import 'features/profile/domain/repositories/user_profile_repository.dart';
 import 'features/profile/presentation/providers/user_profile_provider.dart';
-import 'core/database/database_helper.dart';
+import 'features/water/domain/repositories/water_consumption_repository.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -37,7 +38,6 @@ class MyApp extends StatelessWidget {
       providers: [
         ChangeNotifierProvider(
           create: (context) {
-            // Using SQLite implementation
             final WaterConsumptionRepository repository =
                 WaterConsumptionSqliteRepositoryImpl(dbHelper);
             final provider = WaterConsumptionProvider(repository);
