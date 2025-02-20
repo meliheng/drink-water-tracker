@@ -42,3 +42,7 @@ This project uses the following packages:
 
 - Flutter SDK: ^3.8.0-1.0.dev
 - Dart: Compatible with Flutter SDK version
+
+## Screenshots
+
+<img src="https://github.com/meliheng/drink-water-tracker/blob/main/assets/screen_shots/1.png" alt="Screenshot 1" width="200"/> <img src="https://github.com/meliheng/drink-water-tracker/blob/main/assets/screen_shots/2.png" alt="Screenshot 2" width="200"/> <img src="https://github.com/meliheng/drink-water-tracker/blob/main/assets/screen_shots/3.png" alt="Screenshot 3" width="200"/>
