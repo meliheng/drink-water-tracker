@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:water_reminder/core/components/bottom_navigation_bar.dart';
 import 'package:water_reminder/features/profile/presentation/pages/profile_page.dart';
 import 'package:water_reminder/features/water/presentation/pages/history_page.dart';
@@ -15,6 +16,135 @@ class _MainLayoutState extends State<MainLayout> {
   int _currentIndex = 0;
 
   final List<Widget> _pages = [const HomePage(), HistoryPage(), ProfilePage()];
+
+  @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      _checkUserProfile();
+    });
+  }
+
+  Future<void> _checkUserProfile() async {
+    final prefs = await SharedPreferences.getInstance();
+    final hasProfile = prefs.getString('user_profile') != null;
+
+    if (!hasProfile && mounted) {
+      _showProfileDialog();
+    }
+  }
+
+  void _showProfileDialog() {
+    showDialog(
+      context: context,
+      barrierDismissible: false,
+      builder: (context) {
+        return Dialog(
+          backgroundColor: Colors.transparent,
+          elevation: 0,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(16),
+          ),
+          child: Container(
+            padding: EdgeInsets.all(20),
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+                colors: [
+                  Colors.blue.shade100.withValues(alpha: 0.9),
+                  Colors.blue.shade50.withValues(alpha: 0.9),
+                ],
+              ),
+              borderRadius: BorderRadius.circular(20),
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.blue.shade200.withValues(alpha: 0.5),
+                  blurRadius: 15,
+                  spreadRadius: 3,
+                ),
+              ],
+            ),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              spacing: 10,
+              children: [
+                Container(
+                  padding: const EdgeInsets.all(8),
+                  decoration: BoxDecoration(
+                    color: Colors.blue.shade100.withValues(alpha: 0.3),
+                    shape: BoxShape.circle,
+                  ),
+                  child: Icon(
+                    Icons.person_outline,
+                    color: Colors.blue.shade700,
+                    size: 24,
+                  ),
+                ),
+                const Text(
+                  'Complete Your Profile',
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.blue,
+                  ),
+                ),
+                Container(
+                  padding: const EdgeInsets.all(8),
+                  decoration: BoxDecoration(
+                    color: Colors.blue.shade100.withValues(alpha: 0.3),
+                    shape: BoxShape.circle,
+                  ),
+                  child: Icon(
+                    Icons.water_drop,
+                    color: Colors.blue.shade700,
+                    size: 28,
+                  ),
+                ),
+                Text(
+                  'To provide you with personalized hydration recommendations, we need some information about you.',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontSize: 13,
+                    height: 1.3,
+                    color: Colors.blue.shade900,
+                  ),
+                ),
+                Container(
+                  width: double.infinity,
+                  margin: const EdgeInsets.symmetric(horizontal: 12),
+                  child: ElevatedButton(
+                    onPressed: () {
+                      Navigator.of(context).pop();
+                      setState(() {
+                        _currentIndex = 2; // Switch to profile tab
+                      });
+                    },
+                    style: ElevatedButton.styleFrom(
+                      padding: const EdgeInsets.symmetric(vertical: 10),
+                      backgroundColor: Colors.blue.shade600,
+                      elevation: 0,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                    ),
+                    child: const Text(
+                      'Set Up Profile',
+                      style: TextStyle(
+                        fontSize: 15,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        );
+      },
+    );
+  }
 
   void _onTabTapped(int index) {
     setState(() {
