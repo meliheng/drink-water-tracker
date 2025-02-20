@@ -45,4 +45,7 @@ This project uses the following packages:
 
 ## Screenshots
 
-<img src="https://github.com/meliheng/drink-water-tracker/blob/main/assets/screen_shots/1.png" alt="Screenshot 1" width="200"/> <img src="https://github.com/meliheng/drink-water-tracker/blob/main/assets/screen_shots/2.png" alt="Screenshot 2" width="200"/> <img src="https://github.com/meliheng/drink-water-tracker/blob/main/assets/screen_shots/3.png" alt="Screenshot 3" width="200"/>
+<img src="https://github.com/meliheng/drink-water-tracker/blob/main/assets/ss/ss1.png" alt="Screenshot 1" width="200"/> <img src="https://github.com/meliheng/drink-water-tracker/blob/main/assets/ss/ss2.png" alt="Screenshot 2" width="200"/> <img src="https://github.com/meliheng/drink-water-tracker/blob/main/assets/ss/ss3.png" alt="Screenshot 3" width="200"/> 
+
+
+<img src="https://github.com/meliheng/drink-water-tracker/blob/main/assets/ss/ss4.png" alt="Screenshot 3" width="200"/> <img src="https://github.com/meliheng/drink-water-tracker/blob/main/assets/ss/ss5.png" alt="Screenshot 3" width="200"/>
